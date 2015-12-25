@@ -1,0 +1,9 @@
+<script>
+    <% if (theme.switch_banner){ %>
+    var number_of_banners = 6;
+    var randnum = Math.floor(Math.random() * number_of_banners + 1);
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner" + randnum + ".jpg)";
+    <% } else { %>
+    document.getElementById("banner").style.backgroundImage = "url(/css/images/banner.jpg)";
+    <% } %>
+</script>

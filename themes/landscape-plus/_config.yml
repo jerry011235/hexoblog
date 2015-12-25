@@ -1,0 +1,46 @@
+﻿# Header
+menu:
+  首页: /
+  文章列表: /archives
+  关于: /about
+  联系: /contact
+  404音乐电台: /404
+  原创语录: /quotations
+rss: /atom.xml
+
+# Content
+excerpt_link: 阅读全文
+fancybox: false
+mathjax: false
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- recent_posts
+- archive
+- tagcloud
+
+- links
+- recent_comments
+- tag
+
+# Links
+links:
+  M-x Chris-An-Emacser: http://www.chriszheng.science/
+  本博客源代码: https://github.com/jerry011235/hexoblog
+  landscape-plus主题演示: http://jasonxiang.com/landscape-plus/
+  landscape-plus主题github地址: https://github.com/xiangming/landscape-plus
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins: 
+fb_app_id:
+
+switch_banner: true
+
+
+

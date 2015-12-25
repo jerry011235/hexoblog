@@ -1,0 +1,118 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 璀璨星空 ☯ 无垠宇宙
+subtitle: 耐心 谦虚 平静
+description: 璀璨星空的博客
+author: 璀璨星空
+language: zh-CN
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://starsky.gitcafe.io/
+root: /
+permalink: :year/:month/:day/:title/
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+permalink_defaults: /404.html
+
+# Directory
+source_dir: source
+public_dir: public
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
+
+index_generator:
+  per_page: 9 ##首页默认9篇文章标题 如果值为0不分页
+archive_generator:
+    per_page: 500 ##归档页面默认100篇文章标题
+    yearly: true  ##生成年视图
+    monthly: true ##生成月视图
+tag_generator:
+    per_page: 100 ##标签分类页面默认100篇文章
+category_generator: 
+    per_page: 100 ###分类页面默认100篇文章
+
+
+# Server
+## Hexo uses Connect as a server
+## You can customize the logger format as defined in
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+server_ip: localhost
+logger: false
+logger_format: dev
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+
+# Disqus
+disqus_shortname: 
+
+# Extensions
+## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
+Plugins:
+    - hexo-generator-feed
+    - hexo-generator-sitemap
+ 
+## Feed Atom
+feed:
+   type: atom
+   path: atom.xml
+   limit: 20
+ 
+## sitemap
+sitemap:
+    path: sitemap.xml     
+ 
+## Themes: https://github.com/hexojs/hexo/wiki/Themes
+theme: landscape-plus
+exclude_generator:
+
+duoshuo_shortname: starsky001
+
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+- type: git
+  repository: git@gitcafe.com:starsky/starsky.git
+  branch: gitcafe-pages
+- type: git
+  repository: git@github.com:jerry011235/jerry011235.github.io.git
+  branch: master

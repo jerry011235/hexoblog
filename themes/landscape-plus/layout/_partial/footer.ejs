@@ -1,0 +1,19 @@
+<footer id="footer">    
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>   
+   <div class="outer">
+    <div id="footer-info" class="inner">	  
+	  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" alt="知识共享许可协议"></a><br>
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      , hosted on <a href="https://gitcafe.com" target="_blank">gitcafe</a><br>
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a><br>
+      <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	  </script>
+      <span id="busuanzi_container_site_uv">您是本站的第<span id="busuanzi_value_site_uv">
+	  </span>个小伙伴：） 
+   </div>
+  <div class="footer-text1">认真过好每一天的生活。</div> 
+  <div class="footer-text2">——璀璨星空</div> 
+</footer>

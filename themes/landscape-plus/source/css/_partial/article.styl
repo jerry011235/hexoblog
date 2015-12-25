@@ -1,0 +1,428 @@
+.article
+  margin: block-margin 0
+  font-family: SimSun
+  letter-spacing: 1px
+
+.article-inner
+  @extend $block
+  overflow: hidden
+
+.article-meta
+  clearfix()
+
+.article-date
+  font-weight: bold
+  font-family: "微软雅黑"
+  @extend $block-caption
+  float: left
+  a&:hover
+    color: color-link  
+  &:before
+    font-family: font-icon
+    color: #ccc
+    content: "\f073"
+
+.article-category
+  font-weight: bold
+  font-family: "微软雅黑"
+  float: left
+  line-height: 1em
+  color: #ccc
+  text-shadow: 0 1px #fff
+  margin-left: 20px
+  &:before
+    font-family: font-icon
+    content: "\f06c"
+  @media mq-mobile
+    margin-left: 5px
+    margin-bottom: 10px	
+
+
+.article-category-link
+  @extend $block-caption
+  margin: 0 12px 1em
+  a&:hover
+    color: color-link
+
+.article-header
+  font-family: "微软雅黑"
+  padding: article-padding article-padding 0
+      
+
+.article-title
+  text-decoration: none
+  font-size: 2em
+
+  color: color-default
+  line-height: line-height-title
+  transition: color 0.2s
+  a&:hover
+    color: color-link
+
+.article-entry
+  @extend $base-style
+  clearfix()
+  color: color-default
+  padding: 0 article-padding
+  p, table
+    line-height: line-height
+    margin: line-height 0
+
+  h1, h2, h3, h4, h5, h6
+    line-height: line-height-title
+    margin: line-height-title 0
+  a
+    color: color-link
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  ul, ol, dl
+    margin-top: line-height
+    margin-bottom: line-height
+  img, video
+    max-width: 100%
+    height: auto
+    display: block
+    margin: auto
+  iframe
+    border: none
+  table
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 101px
+  th
+    font-weight: bold
+    border-bottom: 3px solid #fff
+    padding-bottom: 1em
+  td
+    border-bottom: 1px solid #fff
+    padding: 10px 0
+  blockquote
+    font-family: font-serif
+    margin: line-height 0
+    padding: 0 0.8em;
+    border-left:4px solid #fff
+    color: #777
+    footer
+      font-size: font-size
+      margin: line-height 0
+      font-family: font-sans
+      cite
+        &:before
+          content: "—"
+          padding: 0 0.5em
+  .pullquote
+    text-align: left
+    width: 45%
+    margin: 0
+    &.left
+      margin-left: 0.5em
+      margin-right: 1em
+    &.right
+      margin-right: 0.5em
+      margin-left: 1em
+  .caption
+    color: color-grey
+    display: block
+    font-size: 0.9em
+    margin-top: 0.5em
+    position: relative
+    text-align: center
+  // http://webdesignerwall.com/tutorials/css-elastic-videos
+  .video-container
+    position: relative
+    padding-top: (9 / 16 * 100)% // 16:9 ratio
+    height: 0
+    overflow: hidden
+    iframe, object, embed
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      margin-top: 0
+
+.article-more-link a
+  display: inline-block
+  line-height: 1em
+  padding: 6px 15px
+  border-radius: 15px
+  background: color-background
+  color: color-grey
+  text-shadow: 0 1px #fff
+  text-decoration: none
+  &:hover
+    background: color-link
+    color: #fff
+    text-decoration: none
+    text-shadow: 0 1px darken(color-link, 20%)
+
+.article-footer
+  clearfix()
+  font-size: 0.85em
+  line-height: line-height
+  border-top: 2px solid color-border
+  padding-top: line-height
+  margin: 0 article-padding article-padding
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      color: color-default
+
+.article-tag-list-item
+  font-family: "微软雅黑"
+  float: left
+  margin-right: 10px
+
+.article-tag-list-link
+  a&:hover
+    color: color-link
+  &:before
+    content: "✎"
+
+.article-comment-link
+  font-family: "微软雅黑"
+  float: right
+  &:before
+    content: "\f075"
+    font-family: font-icon
+    padding-right: 8px
+
+.article-share-link
+  font-family: "微软雅黑"
+  cursor: pointer
+  float: right
+  margin-left: 20px
+  &:before
+    content: "\f064"
+    font-family: font-icon
+    padding-right: 6px
+
+#article-nav
+  clearfix()
+  position: relative
+  @media mq-normal
+    margin: block-margin 0
+    &:before
+      absolute-center(8px)
+      content: ""
+      border-radius: 50%
+      background: color-border
+      box-shadow: 0 1px 2px #fff
+
+.article-nav-link-wrap
+  text-decoration: none
+  text-shadow: 0 1px #fff
+  color: color-grey
+  box-sizing: border-box
+  margin-top: block-margin
+  text-align: center
+  display: block
+  &:hover
+    color: color-default
+  @media mq-normal
+    width: 50%
+    margin-top: 0
+
+#article-nav-newer
+  @media mq-normal
+    float: left
+    text-align: right
+    padding-right: 20px
+
+#article-nav-older
+  @media mq-normal
+    float: right
+    text-align: left
+    padding-left: 20px
+
+.article-nav-caption
+  text-transform: uppercase
+  letter-spacing: 2px
+  color: color-border
+  line-height: 1em
+  font-weight: bold
+  #article-nav-newer &
+    margin-right: -2px
+
+.article-nav-title
+  font-size: 0.85em
+  line-height: line-height
+  margin-top: 0.5em
+
+.article-gallery
+  background: #000
+  position: relative
+
+.article-gallery-photos
+  position: relative
+  overflow: hidden
+
+.article-gallery-img
+  display: none
+  max-width: 100%
+  &:first-child
+    display: block
+  &.loaded
+    position: absolute
+    display: block
+  img
+    display: block
+    max-width: 100%
+    margin: 0 auto
+/*
+$article-gallery-ctrl
+  position: absolute
+  top: 0
+  height: 100%
+  width: 60px
+  color: #fff
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+  opacity: 0.3
+  transition: opacity 0.2s
+  cursor: pointer
+  &:hover
+    opacity: 0.8
+  &:before
+    font-size: 30px
+    font-family: font-icon
+    position: absolute
+    top: 50%
+    margin-top: @font-size * -0.5
+
+.article-gallery-prev
+  @extend $article-gallery-ctrl
+  left: 0
+  &:before
+    content: "\f053"
+    left: 15px
+
+.article-gallery-next
+  @extend $article-gallery-ctrl
+  right: 0
+  &:before
+    content: "\f054"
+    right: 15px*/
+	
+	
+
+//toc
+#toc.toc-article
+  background color-background
+  border-radius 4px
+  margin 1.6em 0 1.6em 2em
+  line-height 1.5em
+  font-size 0.9em
+  -webkit-border-radius 4px
+
+  h2, ol
+    padding 0 0.4em
+    margin 0
+  h2
+    cursor pointer
+  @media mq-mobile
+    margin 1.6em 0
+    width 100%
+  @media mq-tablet
+    margin 1.6em 0
+    width 100%
+#toc
+  line-height 1.3em
+  font-size 0.8em
+  float right
+  .toc
+    li
+      list-style-type none
+      a
+        &:hover
+          color color-font
+          text-decoration none !important
+  .toc-child 
+    padding-left 1.5em
+#toc.toc-aside
+  display none
+  width 13%
+  position fixed
+  right 2%
+  top 360px
+  line-height 1.5em
+  max-height: 68%
+  overflow: auto
+  font-size 1em
+  color color-heading
+  opacity .6
+  transition opacity 1s ease-out
+  @media mq-mobile
+    width 60%
+    height 40%
+    right 58px 
+    padding 0 20px
+    background #fff
+    overflow auto
+  @media mq-tablet
+    width 60%
+    height 40%
+    right 58px 
+    padding 0 20px
+    background #fff
+    overflow auto
+  h2
+    padding 0.3em 0
+    color color-font
+  &:hover
+    transition opacity .3s ease-out
+    opacity 1
+  a
+    transition color 1s ease-out
+    text-decoration none
+    color color-link
+    &:hover
+      color color-theme
+      transition color .3s ease-out
+
+/*! css3 animate */
+.animated
+  animation-fill-mode both
+  animation-duration 1s
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+.fadeIn
+  animation-name fadeIn
+
+@keyframes fadeInDown
+  0%
+    opacity 0
+    transform translateY(-20px)
+  100% 
+    opacity 1
+    transform translateY(0)
+
+.fadeOut
+  animation-name fadeOut
+
+.moveMain
+  margin-left 10% !important
+  
+  
+  
+//自定义文章末尾文字样式“每晚一问”
+.article-end-text-wrap
+  margin: 5px 0
+.article-end-text
+  font-family: font-sans
+  font-size: 20px
+  line-height: 1.6em
+  text-align:center
+  padding: 1em 2em
+  
+  background: color-widget-background
+  box-shadow: 1px 2px 3px color-border
+  //border: 1px solid color-widget-border
+  border-radius: 3px
+
