@@ -1,1 +1,1 @@
-"D:\Program Files\Git\bin\sh.exe" --login -i -- "D:\备份\hexoblog\update_hexoblogsource.sh"
+"D:\Program Files\Git\bin\sh.exe" --login -i -- "D:\备份\hexoblog\update_hexoblog_source.sh"
