@@ -30,6 +30,7 @@ tags: [教程, hexo, 站内搜索]
 
 最后只要`hexo clean && hexo g && hexo d`重新部署上传就OK了。
 
+然后每隔一段时间搜索最新的google镜像站，把域名替换下（去掉或不去掉前面的`www`都可以，比如`//www.guge.link/search`），保证搜索服务可用。
 
   [1]: http://tinysou.com/
   [2]: https://swiftype.com
