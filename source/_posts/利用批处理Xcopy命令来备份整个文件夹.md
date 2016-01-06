@@ -43,6 +43,33 @@ Xcopy D:\hexo E:\hexo博客备份 /s /e /y /d
 如果使用xcopy命令出现“内存不足”的错误提示。
 原因是设的目的路径太长（太深），将目的路径改为磁盘根目录或根目录下的一个目录就可以了。** 
 来源：http://www.cnblogs.com/KevinJasmine/p/4159234.html
+
+2016-1-6更新备份hexo的bat，代码如下：
+``` bash
+@echo off
+set source="D:\hexo"
+set target="D:\备份\hexoblog"
+
+del /f/s/q "%target%\source" > nul
+rmdir /s/q "%target%\source"
+
+del /f/s/q "%target%\themes" > nul
+rmdir /s/q "%target%\themes"
+
+del /f/s/q "%target%\_config.yml" > nul
+
+xcopy "%source%\source" "%target%\source\" /e /y /d /i
+xcopy "%source%\themes" "%target%\themes\" /e /y /d /i
+xcopy "%source%\_config.yml" "%target%\" /y /d
+
+```
+
+这里注意`/i`参数，它是在目标文件夹不存在的情况下自动创建文件夹并复制。另外目标路径的结尾如果不加`\`默认会弹出提示，加`\`就不弹提示。
+比如 ：要把`%source%`复制到`%target%`，但是`%target%`文件夹并不存在，用下面的命令也能复制，并且不会弹出提示。
+`xcopy "%source%" "%target%\" /e /y /d /i`
+后来经过测试，`\` 和 `/i `只要有一个就不会出现提示了。
+
+
   [1]: http://baike.baidu.com/item/xcopy
   [2]: http://www.toucan.co/
   [3]: http://www.freefilesync.org/
