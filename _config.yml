@@ -106,6 +106,8 @@ exclude_generator:
 
 duoshuo_shortname: starsky001
 
+skip_render: README.md
+
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
