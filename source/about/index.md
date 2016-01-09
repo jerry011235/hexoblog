@@ -43,7 +43,7 @@ toc: true
 
 以上是用[css3buttongenerator.com][5]生成的CSS邮箱图片，制作的详细过程请看[这里][6]。
 
-## 关于版权
+## 版权
 ![](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
 [璀璨星空的博客](http://starsky.gitcafe.io/)采用[署名-非商业性使用-相同方式共享4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)国际许可证进行许可。转载请注明出处。
 
