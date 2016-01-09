@@ -39,7 +39,7 @@ git add -A && git commit -m '你的注释' && git push origin master
 ```
 等命令运行完后，刷新<https://github.com/jerry011235/test>，会发现本地的文件全部都上传到github远程仓库上了。
 
-# 测试同步
+# 本地目录和远程仓库进行文件同步
 然后我们进行文件和文件夹的修改操作，就是看看修改后的本地目录能否和github同步（目录里的文件和文件夹一模一样）。
 我们先在[http://mofas.github.io/mindMap/dist/index.html][3]上画一个文档修改的思维导图。
 ![文档操作][4]
