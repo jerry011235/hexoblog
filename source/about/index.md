@@ -28,7 +28,7 @@ toc: true
 
 <center>哦，对了，我还喜欢与众不同的想法，上面的图片就是个例子，来源于达芬奇习惯用左手写“镜面字”。 ＾_＾</center>
 
-<a href="mailto:jerry011235@gmail.com" style=
+<a href="#" style=
 " background: #3498db;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
