@@ -41,8 +41,17 @@ git add -A && git commit -m '你的注释' && git push origin master
 
 ## 本地目录和远程仓库进行文件同步
 然后我们进行文件和文件夹的修改操作，就是看看修改后的本地目录能否和github同步（目录里的文件和文件夹一模一样）。
-我们先在[http://mofas.github.io/mindMap/dist/index.html][3]上画一个文档修改的思维导图。
-![文档操作][4]
+我们先在[https://josetomastocino.github.io/mindmapit/][3]上画一个文件和文件夹修改操作的思维导图。
+![文件和文件夹的操作][4]
+
+**小技巧：搜索`(online) mindmap (github.io)`会出来更多的在线思维导图（括号里的单词可加可不加）：**
+
+ - [http://mindmap.4ye.me/br57Govl][5]
+ - [jsMind][6]
+ - [http://mofas.github.io/mindMap/dist/index.html][7]
+ - [https://www.text2mindmap.com/][8]
+ - [https://kampfer.github.io/mindMap/client/index.html][9]
+ - [http://my-mind.github.io/][10]
 
 接着我们就开始在工作目录`D:\test`文件夹里面进行增加和删除文件和文件夹、修改文件内容和文件名等操作。
 经过测试，这行代码完全可以把本地目录的文件同步到github远程仓库。
@@ -51,14 +60,19 @@ git add -A && git commit -m '你的注释' && git push origin master
 ```
 **但注意：本地新建一个空文件夹并不会被同步到github远程仓库上。**
 ## 查看文件版本的历史纪录
-你可以在<https://github.com/jerry011235/test>页面中点击`8 commits`链接来查看[提交更新的历史纪录][5]。
-
+你可以在<https://github.com/jerry011235/test>页面中点击`commits`链接来查看[提交更新的历史纪录][11]，如图：
+![点击commits][12]
+然后点击`<>`还可以查看当时的文件，一直点击打开文件后，对着`Raw`右键，选择`链接另存为`还可以下载该版本的文件。
+![github下载文件][13]
+以后就可以上传一些word文档来进行版本控制，而因为github地址是公开的，任何人打开就能看到，所以就上传一些可以公开的文档。
+下面这样的日子就一去不复返了：）
+![git版本控制][14]
 ## Gitbash小技巧
 ### 快捷键
 1. 按方向键`↑`（上键）可以显示上一条命令，`Ctrl + p`也有同样效果。
 2. Ctrl + c可以终止命令。
 
-更多快捷键可以参考：[Bash Shell 快捷键][6]或搜索`Bash Shell 快捷键`来得到更多信息。
+更多快捷键可以参考：[Bash Shell 快捷键][15]或搜索`Bash Shell 快捷键`来得到更多信息。
 ### “Git add -A” and “Git add .”的区别
 上述代码为什么要用`git add -A`而不用`git add .`，因为
 
@@ -72,19 +86,28 @@ Git add操作  | 对应的提交操作
 `git add .`   | stages new and modified, without deleted
 `git add -u`  | stages modified and deleted, without new
 Git Version 1.X：
-![Git Version 1.X ][7]
+![Git Version 1.X ][16]
 Git Version 2.X：
-![Git Version 2.X ][8]
+![Git Version 2.X ][17]
 
-来自：[http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add][9]
+来自：[http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add][18]
 
 
   [1]: https://github.com
   [2]: https://github.com/jerry011235/test
-  [3]: http://mofas.github.io/mindMap/dist/index.html
-  [4]: http://7xivmb.com1.z0.glb.clouddn.com/%E6%96%87%E6%A1%A3%E4%BF%AE%E6%94%B9.png
-  [5]: https://github.com/jerry011235/test/commits/master
-  [6]: http://www.cnblogs.com/include/
-  [7]: http://i.stack.imgur.com/YfLUZ.jpg
-  [8]: http://i.stack.imgur.com/KwOLu.jpg
-  [9]: http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
+  [3]: https://josetomastocino.github.io/mindmapit
+  [4]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E6%96%87%E4%BB%B6%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%93%8D%E4%BD%9C.PNG
+  [5]: http://mindmap.4ye.me/br57Govl
+  [6]: https://hizzgdev.github.io/jsmind/developer.html
+  [7]: http://mofas.github.io/mindMap/dist/index.html
+  [8]: https://www.text2mindmap.com/
+  [9]: https://kampfer.github.io/mindMap/client/index.html
+  [10]: http://my-mind.github.io/
+  [11]: https://github.com/jerry011235/test/commits/master
+  [12]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E7%82%B9%E5%87%BBcommits.png
+  [13]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E5%8F%B3%E9%94%AEraw.png
+  [14]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6_word%E6%9C%80%E7%BB%88%E4%BF%AE%E6%94%B9%E7%89%88.jpg
+  [15]: http://www.cnblogs.com/include/
+  [16]: http://i.stack.imgur.com/YfLUZ.jpg
+  [17]: http://i.stack.imgur.com/KwOLu.jpg
+  [18]: http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add

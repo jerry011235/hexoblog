@@ -22,11 +22,11 @@ toc: true
 ![](/images/contact_gmail.png) 
 <center>(＠_＠;)</center>
 
-也许你需要一面镜子放到电脑屏幕前o(*^▽^*)┛
+<center>也许你需要一面镜子放到电脑屏幕前o(^▽^)┛</center>
 
-或者把这张图水平旋转180° (๑•̀ㅂ•́)و✧
+<center>或者把这张图水平旋转180°(๑•̀ㅂ•́)و✦ </center>
 
-哦，对了，我还喜欢与众不同的想法，上面的图片就是个例子，来源于达芬奇习惯用左手写“镜面字”。 ＾_＾
+<center>哦，对了，我还喜欢与众不同的想法，上面的图片就是个例子，来源于达芬奇习惯用左手写“镜面字”。 ＾_＾</center>
 
 <a href="mailto:jerry011235@gmail.com" style=
 " background: #3498db;
@@ -38,10 +38,12 @@ toc: true
   font-size: 20px;
   background: #3498db;
   padding: 10px 20px 10px 20px;
+  position: relative;
+  left: 280px;
   text-decoration: none;">jerry011235@gmail.com</a>
 
 
-以上是用[css3buttongenerator.com][5]生成的CSS邮箱图片，制作的详细过程请看[这里][6]。
+<center>以上是用[css3buttongenerator.com][5]生成的CSS邮箱图片，制作的详细过程请看[这里][6]。</center>
 
 ## 版权
 ![](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
