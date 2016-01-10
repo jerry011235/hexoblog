@@ -50,23 +50,23 @@ git add -A && git commit -m '你的注释' && git push origin master
 git add -A && git commit -m '你的注释' && git push origin master
 ```
 **但注意：本地新建一个空文件夹并不会被同步到github远程仓库上。**
-
+## 查看文件版本的历史纪录
 你可以在<https://github.com/jerry011235/test>页面中点击`8 commits`链接来查看[提交更新的历史纪录][5]。
 
-## gitbash小技巧
+## Gitbash小技巧
 ### 快捷键
 1. 按方向键`↑`（上键）可以显示上一条命令，`Ctrl + p`也有同样效果。
 2. Ctrl + c可以终止命令。
 
 更多快捷键可以参考：[Bash Shell 快捷键][6]或搜索`Bash Shell 快捷键`来得到更多信息。
-### “git add -A” and “git add .”的区别
+### “Git add -A” and “Git add .”的区别
 上述代码为什么要用`git add -A`而不用`git add .`，因为
 
  - `git add -A` :stages All
  - `git add .` :stages new and modified, without deleted
  - `git add -u` :stages modified and deleted, without new
 
-git add操作  | 对应的提交操作
+Git add操作  | 对应的提交操作
 ------------- | -------------
 `git add -A`   | stages All
 `git add .`   | stages new and modified, without deleted
