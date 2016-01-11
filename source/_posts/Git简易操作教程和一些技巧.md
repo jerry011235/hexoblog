@@ -66,7 +66,7 @@ git add -A && git commit -m '你的注释' && git push origin master
 ![github下载文件][13]
 以后就可以上传一些word文档来进行版本控制，而因为github地址是公开的，任何人打开就能看到，所以就上传一些可以公开的文档。
 下面这样的日子就一去不复返了：）
-![git版本控制][14]
+![以前的版本控制][14]
 ## Gitbash小技巧
 ### 快捷键
 1. 按方向键`↑`（上键）可以显示上一条命令，`Ctrl + p`也有同样效果。
@@ -106,7 +106,7 @@ Git Version 2.X：
   [11]: https://github.com/jerry011235/test/commits/master
   [12]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E7%82%B9%E5%87%BBcommits.png
   [13]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E5%8F%B3%E9%94%AEraw.png
-  [14]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6_word%E6%9C%80%E7%BB%88%E4%BF%AE%E6%94%B9%E7%89%88.jpg
+  [14]: http://ww3.sinaimg.cn/large/5f7e4f3ejw1ezvybehvd7j207k08cgm5.jpg
   [15]: http://www.cnblogs.com/include/
   [16]: http://i.stack.imgur.com/YfLUZ.jpg
   [17]: http://i.stack.imgur.com/KwOLu.jpg
