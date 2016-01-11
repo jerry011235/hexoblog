@@ -72,7 +72,7 @@ git add -A && git commit -m '你的注释' && git push origin master
 1. 按方向键`↑`（上键）可以显示上一条命令，`Ctrl + p`也有同样效果。
 2. Ctrl + c可以终止命令。
 
-更多快捷键可以参考：[Bash Shell 快捷键][15]或搜索`Bash Shell 快捷键`来得到更多信息。
+更多快捷键可以参考附录或搜索`Bash Shell 快捷键`来得到更多信息。
 ### “Git add -A” and “Git add .”的区别
 上述代码为什么要用`git add -A`而不用`git add .`，因为
 
@@ -86,11 +86,124 @@ Git add操作  | 对应的提交操作
 `git add .`   | stages new and modified, without deleted
 `git add -u`  | stages modified and deleted, without new
 Git Version 1.X：
-![Git Version 1.X ][16]
+![Git Version 1.X ][15]
 Git Version 2.X：
-![Git Version 2.X ][17]
+![Git Version 2.X ][16]
 
-来自：[http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add][18]
+来自：[http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add][17]
+
+## 附录
+
+Bash Shell 快捷键
+
+【CTRL 键】
+Ctrl + a – Jump to the start of the line
+Ctrl + b – Move back a char
+Ctrl + c – Terminate the command //用的最多了吧?
+Ctrl + d – Delete from under the cursor
+Ctrl + e – Jump to the end of the line
+Ctrl + f – Move forward a char
+Ctrl + k – Delete to EOL
+Ctrl + l – Clear the screen //清屏，类似 clear 命令
+Ctrl + r – Search the history backwards //查找历史命令
+Ctrl + R – Search the history backwards with multi occurrence
+Ctrl + u – Delete backward from cursor // 密码输入错误的时候比较有用
+Ctrl + xx – Move between EOL and current cursor position
+Ctrl + x @ – Show possible hostname completions
+Ctrl + z – Suspend/ Stop the command
+
+【补充:】
+Ctrl + h – 删除当前字符
+Ctrl + w – 删除最后输入的单词
+
+【ALT 键】
+平时很少用。有些和远程登陆工具冲突。
+Alt + < - Move to the first line in the history
+Alt + > – Move to the last line in the history
+Alt + ? – Show current completion list
+Alt + * – Insert all possible completions
+Alt + / – Attempt to complete filename
+Alt + . – Yank last argument to previous command
+Alt + b – Move backward
+Alt + c – Capitalize the word
+Alt + d – Delete word
+Alt + f – Move forward
+Alt + l – Make word lowercase
+Alt + n – Search the history forwards non-incremental
+Alt + p – Search the history backwards non-incremental
+Alt + r – Recall command
+Alt + t – Move words around
+Alt + u – Make word uppercase
+Alt + back-space – Delete backward from cursor
+// SecureCRT 如果没有配置好，这个就很管用了。
+
+【其他特定的键绑定:】
+输入 bind -P 可以查看所有的键盘绑定。这一系列我觉得更为实用。
+Here “2T” means Press TAB twice
+$ 2T – All available commands(common) //命令行补全，我认为是 Bash 最好用的一点
+$ (string)2T – All available commands starting with (string)
+$ /2T – Entire directory structure including Hidden one
+$ ./2T – Only Sub Dirs inside including Hidden one
+$ *2T – Only Sub Dirs inside without Hidden one
+$ ~2T – All Present Users on system from “/etc/passwd” //第一次见到，很好用
+$ $2T – All Sys variables //写Shell脚本的时候很实用
+$ @2T – Entries from “/etc/hosts” //第一次见到
+$ =2T – Output like ls or dir //好像还不如 ls 快捷
+
+Esc + T – 交换光标前面的两个单词
+
+【命令行历史】
+history 显示命令历史列表
+↑(Ctrl p)  显示上一条命令
+↓(Ctrl n)  显示下一条命令
+!num 执行命令历史列表的第num条命令
+!! 执行上一条命令
+!?string? 执行含有string字符串的最新命令
+Ctrl + r - 然后输入若干字符，开始向上搜索包含该字符的命令，继续按Ctrl r，搜索上一条匹配的命令
+Ctrl + s - 与Ctrl + 类似,只是正向检索
+Alt + < - 历史列表第一项
+Alt + > - 历史列表最后一项
+ls !$ 执行命令ls，并以上一条命令的参数为其参数
+
+【命令行编辑】
+Ctrl + u - 剪切命令行中光标所在处之前的所有字符（不包括自身）
+Ctrl + k - 剪切命令行中光标所在处之后的所有字符（包括自身）
+Ctrl + a - 移动到当前行的开头
+Ctrl + e - 移动到当前行的结尾
+Ctrl + d - 删除光标所在处字符
+Ctrl + h - 删除光标所在处前一个字符
+Ctrl + y - 粘贴刚才所删除的字符
+Ctrl + c - 删除整行
+Ctrl + (x u) - 按住Ctrl的同时再先后按x和u，撤销刚才的操作
+Ctrl + w - 剪切光标所在处之前的一个词（以空格、标点等为分隔符）
+Alt + d - 剪切光标之后的词
+Ctrl + f - 光标向前移动一个字符,相当与->
+Ctrl + b - 光标向后移动一个字符,相当与<-
+Alt + f - 光标向前移动一个单词
+Alt + b - 光标向后移动一个单词
+Esc + f - 移动到当前单词的结尾
+Esc + b - 移动到当前单词的开头
+Ctrl + t - 颠倒光标所在处及其之前的字符位置，并将光标移动到下一个字符
+Alt + t - 交换当前与以前单词的位置
+Esc + t - 颠倒光标所在处及其相邻单词的位置
+Alt + u - 把当前词转化为大写
+Alt + l - 把当前词转化为小写
+Alt + c - 把当前词汇变成首字符大写
+Ctrl + v - 插入非凡字符,如Ctrl v Tab加入Tab字符键
+alt + . — 插入最有输入的命令。
+alt + b — 光标移动到前一个单词处。
+Esc + w - 删除光标所在处之前的字符至其单词尾（以空格、标点等为分隔符）
+
+【控制】
+Ctrl + l - 清屏
+ctrl + c — 终止当前命令或进程。
+ctrl + d — 终止shell。
+ctrl + z — 将进程放入后台，可以用fg命令将放入后台的命令调入前台。
+Ctrl + s - 挂起当前shell
+Ctrl + q - 重新启用挂起的shell
+shell(bash)命令行快捷方式
+
+转载自：[https://www.cnblogs.com/include/archive/2011/12/31/2308313.html][18]
 
 
   [1]: https://github.com
@@ -107,7 +220,7 @@ Git Version 2.X：
   [12]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E7%82%B9%E5%87%BBcommits.png
   [13]: http://7xivmb.com1.z0.glb.clouddn.com/git_%E5%8F%B3%E9%94%AEraw.png
   [14]: http://ww3.sinaimg.cn/large/5f7e4f3ejw1ezvybehvd7j207k08cgm5.jpg
-  [15]: http://www.cnblogs.com/include/
-  [16]: http://i.stack.imgur.com/YfLUZ.jpg
-  [17]: http://i.stack.imgur.com/KwOLu.jpg
-  [18]: http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
+  [15]: http://i.stack.imgur.com/YfLUZ.jpg
+  [16]: http://i.stack.imgur.com/KwOLu.jpg
+  [17]: http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
+  [18]: https://www.cnblogs.com/include/archive/2011/12/31/2308313.html
