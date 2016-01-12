@@ -19,6 +19,8 @@ setx GOOGLE_DEFAULT_CLIENT_SECRET "no"
 ```
 注销或重启后，再运行ChromiumPortable.exe就不会出现上述提示了。
 
+来源：<https://stackoverflow.com/questions/21276763/google-api-keys-missing-warning-message-when-using-chromium-portable>
+
 
   [1]: http://www.5169.info/motion/que-shao-google-api-mi-yue-yin-ci-chromium-di-bu-fen-gong-neng-jiang-wu-fa-shi-yong.html
   [2]: http://crportable.sourceforge.net/
