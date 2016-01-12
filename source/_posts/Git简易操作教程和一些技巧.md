@@ -92,9 +92,8 @@ Git Version 2.X：
 
 来自：[http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add][17]
 
-## 附录
-
-Bash Shell 快捷键
+## 附录：Bash Shell 快捷键
+Bash Shell 快捷键（转载自：[天晴如许的博客][18]）
 
 【CTRL 键】
 Ctrl + a – Jump to the start of the line
@@ -203,7 +202,6 @@ Ctrl + s - 挂起当前shell
 Ctrl + q - 重新启用挂起的shell
 shell(bash)命令行快捷方式
 
-转载自：[https://www.cnblogs.com/include/archive/2011/12/31/2308313.html][18]
 
 
   [1]: https://github.com
