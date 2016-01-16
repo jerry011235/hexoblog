@@ -19,7 +19,7 @@ Goole搜索`online css button maker`会出来很多网站，我们选择第一�
   font-size: 20px;
   background: #3498db;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;">点我点我</a>
+  text-decoration: none;">abc@xyz.com</a>
 ```
 效果如下：
 
@@ -33,7 +33,7 @@ Goole搜索`online css button maker`会出来很多网站，我们选择第一�
   font-size: 20px;
   background: #3498db;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;">点我点我</a>
+  text-decoration: none;">abc@xyz.com</a>
 
   [1]: https://www.google.com/#newwindow=1&q=hover+inline+css
   [2]: http://stackoverflow.com/questions/1033156/how-to-write-ahover-in-inline-css
