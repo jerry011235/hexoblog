@@ -1,7 +1,7 @@
 ---
 title: Hexo博客移动端适配的优化
 date: 2015-11-20 13:29:35
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [hexo, 教程, 移动端]
 toc: true
 ---

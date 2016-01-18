@@ -2,7 +2,7 @@
 title: GitHub上下载单文件
 date: 2015-11-12 16:08:13
 tags: github
-categories: [➎电脑技术, 经验技巧]
+categories: [o(^▽^)┛电脑技术, 经验技巧]
 ---
 
 我们知道在GitHub上下载文件夹可以点击右侧下方的`Download Zip`按钮，现在如果要下载文件夹中的某一个单独文件，可以采用下面的办法。

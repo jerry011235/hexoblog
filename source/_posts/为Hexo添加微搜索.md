@@ -1,7 +1,7 @@
 ---
 title: "为Hexo添加微搜索"
 date: 2015-05-11 20:59:26
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo, 搜索]
 toc: true
 ---

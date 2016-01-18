@@ -1,6 +1,6 @@
 title: hexo页面底部添加知识共享许可协议图标
 date: 2015-05-11 23:46:36
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Hexo上传README.md文件
 date: 2015-12-31 14:33:25
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo]
 ---
 在`D:\hexo\source`目录下新建一个`README.md`文件，并编辑输入以下内容：

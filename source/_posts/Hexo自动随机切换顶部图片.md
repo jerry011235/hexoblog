@@ -1,7 +1,7 @@
 ---
 title: Hexo自动随机切换顶部图片
 date: 2015-05-06 15:53:27
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo]
 toc: true
 ---

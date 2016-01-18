@@ -1,7 +1,7 @@
 ---
 title: Hexo添加图片、音乐和视频
 date: 2015-05-05 22:19:59
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo]
 toc: true
 ---

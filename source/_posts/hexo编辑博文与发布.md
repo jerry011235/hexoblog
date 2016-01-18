@@ -1,7 +1,7 @@
 ---
 title: hexo博客编辑博文与发布
 date: 2015-05-05 22:16:16
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo]
 toc: true
 ---

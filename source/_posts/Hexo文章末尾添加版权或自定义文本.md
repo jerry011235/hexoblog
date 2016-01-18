@@ -1,7 +1,7 @@
 ---
 title: Hexo文章末尾添加版权或自定义文本
 date: 2015-11-15 21:39:26
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo, 版权]
 toc: true
 ---

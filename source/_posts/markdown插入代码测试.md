@@ -1,7 +1,7 @@
 ---
 title: markdown插入代码测试
 date: 2015-05-06 11:31:15
-categories: [➎电脑技术, markdown]
+categories: [o(^▽^)┛电脑技术, markdown]
 tags: [markdown, 代码, hexo]
 ---
 

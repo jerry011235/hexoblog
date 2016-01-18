@@ -1,7 +1,7 @@
 ---
 title: 缺少google api密钥,因此chromium的部分功能将无法使用的解决办法
 date: 2016-01-12 21:55:36
-categories: [➎电脑技术, chrome]
+categories: [o(^▽^)┛电脑技术, chrome]
 tags: [chrome, chromium]
 ---
 

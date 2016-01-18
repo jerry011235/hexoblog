@@ -1,7 +1,7 @@
 ---
 title: 修改hexo站内搜索为Google谷歌镜像搜索
 date: 2015-11-12 12:19:16
-categories: [➎电脑技术, hexo]
+categories: [o(^▽^)┛电脑技术, hexo]
 tags: [教程, hexo, 站内搜索]
 ---
 
