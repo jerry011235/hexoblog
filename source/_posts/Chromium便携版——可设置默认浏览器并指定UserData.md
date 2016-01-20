@@ -3,7 +3,7 @@
 title: 'Chromium便携版——可设置默认浏览器并指定UserData'
 date: 2014-02-23 07:15
 tags: chrome
-categories: [o(^▽^)┛电脑技术, chrome]
+categories: [⛺电脑技术, chrome]
 ---
 1.在你想要安装Chromium的目录新建两个文件夹:[Application]和[User Data],比如D:\Program Files\Chromium\Application和D:\Program Files\Chromium\User Data
 2.去[https://download-chromium.appspot.com](https://download-chromium.appspot.com)下载最新chromium压缩包,并把chrome-win32文件夹里的所有内容(其中包含chrome.exe程序)复制或剪切到D:\Program Files\Chromium\Application文件夹里.

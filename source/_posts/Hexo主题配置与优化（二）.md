@@ -1,7 +1,7 @@
 ---
 title: Hexo主题配置与优化（二）
 date: 2015-05-06 14:38:26
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo]
 toc: true
 ---

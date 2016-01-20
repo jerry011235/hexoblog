@@ -1,7 +1,7 @@
 ---
 title: Hexo彩色标签云
 date: 2015-05-16 16:43:25
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo]
 ---
 编辑`D:\hexo\themes\你的主题目录\layout\_widget\tagcloud.ejs`文件，搜索`<%- tagcloud`，然后把整个代码修改为如下样式：

@@ -1,7 +1,7 @@
 ---
 title: 有趣的Chrome扩展：You are Awesome
 date: 2015-06-03 15:49:36
-categories: [o(^▽^)┛电脑技术, chrome]
+categories: [⛺电脑技术, chrome]
 tags: chrome
 ---
 　　今天无意间发现了一个有趣的Chrome扩展：**You are Awesome**

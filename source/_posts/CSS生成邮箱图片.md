@@ -1,7 +1,7 @@
 ---
 title: CSS生成邮箱图片
 date: 2016-01-09 16:46:30
-categories: [o(^▽^)┛电脑技术, 经验技巧]
+categories: [⛺电脑技术, 经验技巧]
 tags: [教程, css]
 ---
 

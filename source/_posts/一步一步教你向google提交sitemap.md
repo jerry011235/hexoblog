@@ -1,6 +1,6 @@
 title: "一步一步教你向google提交sitemap"
 date: 2015-05-06 17:53:11
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo, sitemap]
 toc: ture
 ---

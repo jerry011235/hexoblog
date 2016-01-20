@@ -1,7 +1,7 @@
 ---
 title: markdown禁止自动排序
 date: 2015-06-02 22:05:16
-categories: [o(^▽^)┛电脑技术, markdown]
+categories: [⛺电脑技术, markdown]
 tags: [markdown, 教程]
 ---
 2015-11-20更新：其实更简单的做法是：不按照markdown语法写就行了，在`1.`后不加空格，直接输入字符即可。

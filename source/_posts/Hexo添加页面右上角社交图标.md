@@ -1,7 +1,7 @@
 ---
 title: Hexo添加页面右上角社交图标
 date: 2015-05-28 18:19:25
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [hexo, 教程, 图标]
 toc: true
 ---

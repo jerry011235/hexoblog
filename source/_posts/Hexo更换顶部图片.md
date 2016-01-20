@@ -1,7 +1,7 @@
 ---
 title: Hexo更换顶部图片
 date: 2015-05-06 15:06:45
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo]
 ---
 

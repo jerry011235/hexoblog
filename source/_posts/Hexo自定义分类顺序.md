@@ -1,12 +1,13 @@
 ---
 title: Hexo自定义分类顺序
 date: 2015-12-23 21:36:20
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo, 分类]
 toc: true
 ---
 Hexo的默认分类顺序不知道是按照什么规律排序的，如果想手动自定义分类的顺序，可以使用分类前面加上**数学序号**或其他特殊符号的办法。
 
+调试可以直接替换，也可以先备份好`source`文件夹，然后每个分类只保留一篇文章，接着替换好以后再复制粘贴回去即可。
 ## 分类前面添加数学序号 ##
 
 具体操作为：打开Sublime Text 3，然后按`Ctrl + Shift + F`（进行[多文件搜索][1]），在位置那一栏输入`D:\hexo\source\_posts`，查找那一栏输入`电脑技术`（某一个分类），然后在替换那一栏输入`➎电脑技术`（其中➎我是使用拼音加加输入法打出来的，其实在网上搜索特殊符号大全可以直接复制相应的[数学序号][2]）。
@@ -28,9 +29,27 @@ Hexo的默认分类顺序不知道是按照什么规律排序的，如果想手�
 ![特殊符号排序测试][5]
 然后按照自己的喜好在分类前面添加特殊符号，最后按照上面的操作用Sublime Text 3进行替换保存即可。
 
-## 分类前面添加颜文字 ##
+## 分类前面添加颜文字和emoji表情 ##
 既然能支持特殊符号，当然也能支持颜文字，如果你有更创意的想法，还能支持emoji表情哦👌
 ![颜文字排序][6]
+## 更新记录 ##
+2016-1-16更新分类为：
+``` bash
+( •̀ .̫ •́ )✦哲思感悟
+(^▽^)♫♫♫原创诗词
+o(^▽^)┛电脑技术
+└(^o^)┘他山之石
+╰(⊙_⊙)╯默认分类
+```
+2016-1-20更新分类为：
+``` bash
+☘原创诗词
+☯️哲思感悟
+⛺电脑技术
+❤️他山之石
+🍎默认分类
+```
+
 ## 附录 ##
 ### 特殊符号网站 ###
 
@@ -39,12 +58,13 @@ Hexo的默认分类顺序不知道是按照什么规律排序的，如果想手�
 
 ### emoji表情网站 ###
  - [Get Emoji][9]
+ - [Emoji Ordering][10]
 
 ### 颜文字网站 ###
 
- - [搜狗颜文字][10]
- - [颜文字表情符号大全][11]
- - [【转】颜文字大全(～￣▽￣)～][12]
+ - [搜狗颜文字][11]
+ - [颜文字表情符号大全][12]
+ - [【转】颜文字大全(～￣▽￣)～][13]
 
 
   [1]: https://sublime-text.readthedocs.org/en/latest/search_and_replace/search_and_replace_files.html
@@ -56,6 +76,7 @@ Hexo的默认分类顺序不知道是按照什么规律排序的，如果想手�
   [7]: http://www.fuhao123.com/
   [8]: http://tw.piliapp.com/symbol/
   [9]: http://getemoji.com/
-  [10]: http://pinyin.sogou.com/dict/ywz/
-  [11]: https://www.douban.com/note/83616009/
-  [12]: https://www.douban.com/note/235557738/
+  [10]: http://unicode.org/emoji/charts/emoji-ordering.html
+  [11]: http://pinyin.sogou.com/dict/ywz/
+  [12]: https://www.douban.com/note/83616009/
+  [13]: https://www.douban.com/note/235557738/

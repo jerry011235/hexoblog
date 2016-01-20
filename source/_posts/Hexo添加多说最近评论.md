@@ -1,7 +1,7 @@
 ---
 title: Hexo添加多说最近评论
 date: 2015-05-21 13:13:45
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [hexo, 教程, 评论]
 ---
 以landscape-plus主题为例：

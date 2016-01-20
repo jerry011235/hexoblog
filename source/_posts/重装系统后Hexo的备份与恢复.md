@@ -1,7 +1,7 @@
 ---
 title: 重装系统后Hexo的备份与恢复
 date: 2015-05-26 9:03:05
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo]
 toc: true
 ---

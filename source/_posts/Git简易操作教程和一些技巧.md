@@ -1,7 +1,7 @@
 ---
 title: Git简易操作教程和一些技巧
 date: 2016-01-08 23:36:50
-categories: [o(^▽^)┛电脑技术, Git]
+categories: [⛺电脑技术, Git]
 tags: [教程, git]
 toc: true
 ---

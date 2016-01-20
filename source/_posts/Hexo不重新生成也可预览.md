@@ -1,7 +1,7 @@
 ---
 title: Hexo不重新生成也可预览
 date: 2015-05-07 20:30:25
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo]
 toc: true
 ---

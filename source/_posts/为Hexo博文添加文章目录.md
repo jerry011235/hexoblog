@@ -1,6 +1,6 @@
 title: "为Hexo博文添加文章目录"
 date: 2015-05-06 21:07:18
-categories: [o(^▽^)┛电脑技术, hexo]
+categories: [⛺电脑技术, hexo]
 tags: [教程, hexo]
 toc: true
 
