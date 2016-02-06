@@ -1,0 +1,33 @@
+<% if (page.types) { %>
+<div class="mxn1 mt2 mb2">
+	<span class="btn button-narrow">Tags</span>
+	<svg class="icon gray" data-icon="chevron-right"></svg>
+</div>
+<% } %>
+<div class="mt2 mb2<%= (page.types) ? '' : ' py2' %>">
+	<div class="md-col-12">
+		<div class="overflow-hidden bg-white rounded">
+			<% if (page.types == 'tags') { %>
+			<div class="m1 p2">
+				<%- tagcloud({min_font: 1, max_font: 2, unit: 'em', amount: 200, color: true, start_color: 'orange', end_color: 'maroon'}) %>
+			</div>
+			<% }else{ %>
+			<div class="m1 p2 white">
+				<div class="clearfix">
+					<div class="left">
+						<h1 class="h2 m0"><a href="<%- url_for(page.path) %>" class="black">
+						<%- page.title %>
+						</a></h1>
+					</div>
+					<div class="right"><span class="h6 muted black">
+						<%- date(page.date, "MMM D YYYY")%>
+					</span></div>
+				</div>
+			</div>
+			<div class="p2 border-top">
+				<%- page.content %>
+			</div>
+			<% } %>
+		</div>
+	</div>
+</div>

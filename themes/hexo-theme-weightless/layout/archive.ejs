@@ -1,0 +1,33 @@
+<div class="mt2 mb2 p0">
+	<%
+	var posts = [];
+	site.posts.forEach(function(item, index) {
+		var year = date(item.date, 'YYYY');
+		if (!posts[year]) {
+			posts[year] = [];
+		}
+		posts[year].push({
+			'title': item.title,
+			'path': item.path,
+			'date': item.date
+		})
+	});
+	%>
+	<div class="mxn1 mb2">
+		<span class="btn button-narrow">Archives</span>
+		<svg class="icon gray" data-icon="chevron-right"></svg>
+	</div>
+	<% posts.forEach(function(single, year) { %>
+		<div class="col-12 bg-white rounded mb4">
+			<span class="btn block border-bottom muted"><%- year %></span>
+			<% var length = single.length;
+			single.forEach(function(item, index) { %>
+			<a href="<%- url_for(item.path) %>" class="btn block<%- (index != length - 1 ? ' border-bottom' : '') %>"><%- item.title %>
+				<span class="h6 muted black">
+					<%- date(item.date, "MMM D YYYY")%>
+				</span>
+			</a>
+			<% }) %>
+		</div>
+	<% }) %>
+</div>

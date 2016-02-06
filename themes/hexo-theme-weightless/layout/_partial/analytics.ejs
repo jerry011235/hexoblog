@@ -1,0 +1,17 @@
+<% if (theme.piwik_analytics){ %>
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="//<%= theme.piwik_analytics.domain %>/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', <%= theme.piwik_analytics.siteId %>]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<noscript><p><img src="//<%= theme.piwik_analytics.domain %>/piwik.php?idsite=<%= theme.piwik_analytics.siteId %>" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+<% } %>

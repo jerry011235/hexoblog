@@ -1,0 +1,4 @@
+<% page.posts.each(function(single){ %>
+	<%- partial('article', {item: single, hideNav: true}) %>
+<% }) %>
+<%- partial('_partial/pagination', {base: url_for(config.root), show: 2}) %>

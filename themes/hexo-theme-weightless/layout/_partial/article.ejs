@@ -1,0 +1,54 @@
+<div class="mt2 mb2 py2">
+	<div class="md-col-12">
+		<div class="overflow-hidden bg-white rounded">
+			<div class="m1 p2 white">
+				<div class="clearfix">
+					<div class="left">
+						<h1 class="h2 m0"><a href="<%- url_for(item.path) %>" class="black">
+						<%- item.title %>
+						</a></h1>
+					</div>
+					<div class="right"><span class="h6 muted black">
+						<%- date(item.date, "MMM D YYYY")%>
+					</span></div>
+				</div>
+			</div>
+			<div class="p2 border-top">
+				<%- item.content %>
+			</div>
+			<div class="p2 border-top">
+				<div class="clearfix">
+					<div class="left">
+						<% for (var i = 0; i < item.tags.data.length; i++) { %>
+							<script type="text/javascript">
+								document.write('<a href="<%= url_for(item.tags.data[i].path) %>" class="h6 bold btn btn-outline '+chooseOne(colors)+'"><%- item.tags.data[i].name %></a>');
+								//document.write('<span onclick="window.location=\'' + ' <%= url_for(item.tags.data[i].path) %> ' + '\'" class="clickable h6 bold inline-block px1 '+chooseOne(colors)+' rounded"><%- item.tags.data[i].name %></span>');
+							</script>
+						<% } %>
+					</div>
+					<div class="right"><span class="h6 muted black"><%
+						var length = item.categories.length;
+						item.categories.forEach(function(cat, index) { %>
+						<a class="link" href="<%= url_for(cat.path) %>"><%= cat.name %></a><%= (index != length - 1  ? ', ' : '') %>
+					<% }) %> </span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<% if (typeof hideNav == 'undefined') { %>
+	<div class="clearfix mt2">
+		<% if (page.prev) { %>
+			<a href="<%= config.root + page.prev.path %>" class="left btn">
+			<svg class="icon" data-icon="chevron-left"></svg>
+			<%- __('prev') %>: <%= page.prev.title %>
+		</a>
+		<% } %>
+		<% if (page.next) { %>
+		<a href="<%= config.root + page.next.path %>" class="right btn">
+			<%- __('next') %>: <%= page.next.title %>
+			<svg class="icon" data-icon="chevron-right"></svg>
+		</a>
+		<% } %>
+	</div>
+	<% } %>
+</div>

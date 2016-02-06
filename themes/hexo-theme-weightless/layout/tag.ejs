@@ -1,0 +1,9 @@
+<div class="mxn1 mt2 mb2">
+	<span class="btn button-narrow">Tags</span>
+	<svg class="icon gray" data-icon="chevron-right"></svg>
+	<span class="btn button-narrow"><%= page.tag %></span>
+</div>
+<% page.posts.each(function(single){ %>
+	<%- partial('_partial/article', {item: single, hideNav: true}) %>
+<% }) %>
+<%- partial('_partial/pagination', {base: url_for(page.base), show: 2}) %>

@@ -1,0 +1,9 @@
+menu:
+  Home: ./
+  Archives: archives/
+  Tags: tags/
+  Categories: categories/
+
+piwik_analytics:
+    domain: communistanalytics.com
+    siteId: 1
