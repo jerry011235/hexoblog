@@ -7,7 +7,9 @@ toc: true
 ---
 
 ## 修改调试技巧
-在chrome浏览器中按F12，调出审查元素，然后点击最左端的搜索图标，就可以单独页面上查看任意元素的样式。然后再点击元素，就可以在右侧的`Styles`选项的下方调整其代码，而且**改动实时生效**，代码改动完页面相应元素马上就会改变，显示出效果，这点非常棒！等到调整满意后就复制到别的地方备份一下。因为只要一刷新，页面就会恢复成原来的样子。
+在chrome浏览器中按F12，调出审查元素，然后点击最左端的搜索图标，就可以单独页面上查看任意元素的样式。然后再点击元素，就可以在右侧的`Styles`选项的下方调整其代码，而且**改动实时生效**，代码改动完页面相应元素马上就会改变，显示出效果，这点非常棒！等到调整满意后就复制相关css代码到别的地方备份一下。因为只要一刷新，页面就会恢复成原来的样子。
+
+如果修改满意后，但是不知道要修改的相关代码具体在哪个文件，可以去[landscape-plus主题github地址][1]在`This repository`中搜索相关代码，然后就知道相关代码所在的文件路径了。
 
 ## 添加网站小图标
 到`D:\hexo\themes\landscape-plus\layout\_partial`编辑`head.ejs`文件，按`Ctrl＋f`查找关键词`favicon`，找到在第28行和第29行。
@@ -114,7 +116,7 @@ widgets:
   </div> 
 ```
 2015-11-20更新：增加单独样式以及移动端的适配。
-具体详见另一篇博文：[Hexo博客移动端适配的优化][1]
+具体详见另一篇博文：[Hexo博客移动端适配的优化][2]
 ## 修改返回顶部图标位置
 觉得返回顶部图标的位置太高了，要调低点。
 打开`D:\hexo\themes\landscape-plus\source\css\_partial\totop.styl`，第5行改为`bottom 2em`。
@@ -129,7 +131,7 @@ widgets:
     content: "\f073"
 ```
 
-`.article-date`第27行:
+`.article-category`大概是第27行:
 ``` bash
   &:before
     font-family: font-icon
@@ -149,7 +151,7 @@ widgets:
 >注意：
 1.粘贴特殊符号时，在“notepad++”里是显示为“□”，但是部署或者启动服务预览后会显示出来。
 2.上面的`  a&:hover  color: color-link`是指鼠标滑过“标签”时，会显示链接颜色。
-3.查找一些常见的FontAwesome图标对应的CSS代码可以搜索关键词“FontAwesome CSS content values”。参见[文章底部的附录][2]。
+3.查找一些常见的FontAwesome图标对应的CSS代码可以搜索关键词“FontAwesome CSS content values”。参见[文章底部的附录][3]。
 
 ### 标题前面加条蓝线
 修改`.article-header`条目,添加`border-left`这一行：
@@ -199,7 +201,7 @@ widgets:
     color: color-grey
 ```
 然后把他们不加粗只要删掉相关条目下的`font-weight: bold`和`font-weight`类似代码就OK。
-先在landscape-plus的github主页[搜索`bold`][3]，发现相关代码的文件是`source/css/_extend.styl`和`source/css/_partial/article.styl `。
+先在landscape-plus的github主页[搜索`bold`][4]，发现相关代码的文件是`source/css/_extend.styl`和`source/css/_partial/article.styl `。
 于是删除`source/css/_extend.styl`文件中`$base-style`下的`h1, h2, h3, h4, h5, h6`条目下的`font-weight: bold`代码，注意也要删除下方 `h2, h3, h4, h5, h6`条目下的`font-weight: 600`这一行代码。
 接着去`source/css/_partial/article.styl `文件，删除`.article-entry`下的`h1, h2, h3, h4, h5, h6`条目下的`font-weight: bold`代码。
 于是1-6级标题不加粗就完成了。
@@ -228,24 +230,25 @@ widgets:
 ## 附录
 ### 特殊符号大全
 
- 1. [http://tw.piliapp.com/symbol/][4]
- 2. [http://w13.loxa.edu.tw/ctjh930220/][5]
- 3. [http://star.gg/special-symbols][6]
- 4. [http://www.1t2t.com/3t/soft/28.htm][7]
+ 1. [http://tw.piliapp.com/symbol/][5]
+ 2. [http://w13.loxa.edu.tw/ctjh930220/][6]
+ 3. [http://star.gg/special-symbols][7]
+ 4. [http://www.1t2t.com/3t/soft/28.htm][8]
  
 ### FontAwesome对应CSS值
- 1. [A list of Font Awesome icons and their CSS content values][8]
- 2. [Every Font Awesome 4.3.0 Icon, CSS Class, & Unicode][9]
- 3. [Font Awesome icons and their CSS content values][10]
+ 1. [A list of Font Awesome icons and their CSS content values][9]
+ 2. [Every Font Awesome 4.3.0 Icon, CSS Class, & Unicode][10]
+ 3. [Font Awesome icons and their CSS content values][11]
 
 
-  [1]: http://starsky.gitcafe.io/2015/11/20/Hexo%E5%8D%9A%E5%AE%A2%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E7%9A%84%E4%BC%98%E5%8C%96/#%E4%BF%AE%E6%94%B9%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BA%A7%E5%8F%B3%E9%93%AD%E7%9A%84%E4%BD%8D%E7%BD%AE
-  [2]: http://starsky.gitcafe.io/2015/05/06/Hexo%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%BA%8C%EF%BC%89/##FontAwesome%E5%AF%B9%E5%BA%94CSS%E5%80%BC
-  [3]: https://github.com/xiangming/landscape-plus/search?utf8=%E2%9C%93&q=bold
-  [4]: http://tw.piliapp.com/symbol/
-  [5]: http://w13.loxa.edu.tw/ctjh930220/
-  [6]: http://star.gg/special-symbols##star_symbols
-  [7]: http://www.1t2t.com/3t/soft/28.htm
-  [8]: http://astronautweb.co/snippet/font-awesome/
-  [9]: http://fortawesome.github.io/Font-Awesome/cheatsheet/
-  [10]: http://navaneeth.me/font-awesome-icons-css-content-values/##.VW2oT9qJjIU
+  [1]: https://github.com/xiangming/landscape-plus
+  [2]: http://starsky.gitcafe.io/2015/11/20/Hexo%E5%8D%9A%E5%AE%A2%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E7%9A%84%E4%BC%98%E5%8C%96/#%E4%BF%AE%E6%94%B9%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BA%A7%E5%8F%B3%E9%93%AD%E7%9A%84%E4%BD%8D%E7%BD%AE
+  [3]: http://starsky.gitcafe.io/2015/05/06/Hexo%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%BA%8C%EF%BC%89/##FontAwesome%E5%AF%B9%E5%BA%94CSS%E5%80%BC
+  [4]: https://github.com/xiangming/landscape-plus/search?utf8=%E2%9C%93&q=bold
+  [5]: http://tw.piliapp.com/symbol/
+  [6]: http://w13.loxa.edu.tw/ctjh930220/
+  [7]: http://star.gg/special-symbols##star_symbols
+  [8]: http://www.1t2t.com/3t/soft/28.htm
+  [9]: http://astronautweb.co/snippet/font-awesome/
+  [10]: http://fortawesome.github.io/Font-Awesome/cheatsheet/
+  [11]: http://navaneeth.me/font-awesome-icons-css-content-values/##.VW2oT9qJjIU
